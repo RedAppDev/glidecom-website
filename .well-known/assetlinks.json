@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "de.finndev.glidecom",
+    "package_name": "de.finndev.glidecom.dev",
     "sha256_cert_fingerprints": [
       "1A:75:37:99:43:AE:9A:AF:8F:60:02:C1:20:5D:6F:54:19:E8:12:71:64:56:D4:D6:90:53:20:27:B2:86:4A:5A"
     ]
