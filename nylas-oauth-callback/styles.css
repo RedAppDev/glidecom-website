@@ -51,7 +51,7 @@ h1 {
   right: 24px;
   bottom: max(24px, env(safe-area-inset-bottom, 0px));
   width: calc(50vw - 24px);
-  height: 86px;
+  height: 60px;
   background: #ffffff;
   border-radius: 999px;
   display: flex;
@@ -67,9 +67,10 @@ h1 {
 }
 
 .btn-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+    height: 40px;
   display: block;
+  filter: brightness(0);
 }
 
 .noscript-hint {
