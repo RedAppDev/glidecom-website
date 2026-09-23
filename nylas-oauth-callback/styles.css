@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Quicksand";
-  src: url("assets/Quicksand-VariableFont_wght.ttf") format("truetype-variations"),
-    url("assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/Quicksand-VariableFont_wght.ttf") format("truetype-variations"),
+      url("../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
