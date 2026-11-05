@@ -1,7 +1,7 @@
 @font-face {
   font-family: Quicksand;
   src: url(assets/Quicksand-VariableFont_wght.ttf) format("truetype");
-  font-weight: 300 700;
+  font-weight: 450 700;
   font-display: swap
 }
 
@@ -25,6 +25,7 @@ body {
   background: #000;
     color: #fff;
     font-family: Quicksand, system-ui, sans-serif;
+    font-weight: 450;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased
   }
@@ -46,7 +47,7 @@ body {
   
   .lead {
     font-size: clamp(1.05rem, 1.6vw, 1.3rem);
-    font-weight: 300;
+    font-weight: 450;
     color: #e8e8e8;
     margin-top: 1.25rem;
     max-width: 34em
@@ -211,7 +212,7 @@ button {
   
   footer a,
   footer span {
-    font-weight: 300
+    font-weight: 450
   }
   
   @media(max-width:800px) {
