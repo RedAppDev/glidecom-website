@@ -1,17 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glidecom</title>
-<link rel="icon" type="image/svg+xml" href="assets/glidecom_logo.svg">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glidecom – Email without the noise</title>
+<meta name="description"
+  content="Glidecom is a focused email app for Android. One message at a time, gesture controls, no clutter.">
+<meta name="theme-color" content="#000000">
+<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" hreflang="de" href="/de/">
+<link rel="preload" href="assets/Quicksand-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="title-row">
-    <img src="assets/glidecom_logo.svg" alt="Glidecom logo">
-    <h1>Glidecom</h1>
+<section class="page">
+  <div class="split">
+    <div>
+      <h1>We cut the noise so you can lock in.</h1>
+      <p class="lead">No clutter, just gestures and focus. Built to get through more mail with less mental load.</p>
+      <div class="cta">
+        <img class="logo" src="assets/glidecom_logo_text.svg" alt="Glidecom">
+        <a href="#" aria-label="Get it on Google Play"><img class="badge" src="assets/play_store_badge_desaturated.svg"
+            alt="Get it on Google Play"></a>
+      </div>
+    </div>
+    <!-- PLATZHALTER: Handy-Mockup (Video/GIF) -->
+    <div class="ph phone">Video / GIF placeholder</div>
   </div>
-  <p>Coming to Play Store this Year</p>
+</section>
+
+<section class="page">
+  <div class="center">
+    <h2>Focus through clarity</h2>
+    <p class="lead">Glidecom pulls the text out of complex email layouts, so you can focus on reading.</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="split">
+    <div>
+      <h2>Gesture controls</h2>
+      <p class="lead">Glidecom shows you one message at a time. No more deciding what comes first. Just swipe through.
+      </p>
+      <div class="cta">
+        <a href="#" aria-label="Get it on Google Play"><img class="badge" src="assets/play_store_badge_desaturated.svg"
+            alt="Get it on Google Play"></a>
+      </div>
+    </div>
+    <!-- PLATZHALTER: Grafik Gesten (Video/GIF) -->
+    <div class="ph sq">Video / GIF placeholder</div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="center">
+    <h2>iOS release and new features</h2>
+    <div id="signup">
+      <form id="nl" class="nl" data-ok="You're on the list. We'll let you know." data-dup="You're already on the list."
+        data-err="Something went wrong. Please try again.">
+        <input type="email" name="email" required autocomplete="email" placeholder="Enter your email here"
+          aria-label="Enter your email here">
+        <button type="submit">Notify me</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="legal">By clicking you agree to our <a href="/privacy-policy/">Privacy Policy</a> and <a
+          href="/terms-of-use/">Terms of Use</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Finn Redmann</span>
+  <a href="/imprint/">Imprint</a>
+  <a href="/privacy-policy/">Privacy</a>
+  <a href="/terms-of-use/">AGB</a>
+  <a href="/de/" hreflang="de" lang="de">DE</a>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>

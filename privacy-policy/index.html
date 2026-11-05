@@ -9,7 +9,7 @@
     <style>
         @font-face {
             font-family: "Quicksand";
-            src: url("/assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+            src: url("../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
             font-weight: 300 700;
             font-style: normal;
             font-display: swap;
@@ -45,8 +45,12 @@
             color: var(--fg);
         }
 
-        .language-switch a {
-            text-decoration: underline;
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: clamp(2rem, 6vw, 3.5rem);
         }
 
         a:focus-visible {
@@ -56,7 +60,6 @@
 
         .logo-link {
             display: inline-block;
-            margin-bottom: clamp(2rem, 6vw, 3.5rem);
             line-height: 0;
         }
 
@@ -64,6 +67,14 @@
             height: 2rem;
             width: auto;
             max-width: 100%;
+        }
+
+        .language-switch {
+            margin: 0;
+        }
+
+        .language-switch a {
+            text-decoration: none;
         }
 
         main {
@@ -104,12 +115,14 @@
 
 <body>
     <main>
-        <a class="logo-link" href="/" aria-label="Home">
-            <img class="logo" src="/assets/glidecom_logo_text.svg" alt="Glidecom">
-        </a>
+        <header class="page-header">
+            <a class="logo-link" href="/" aria-label="Home">
+                <img class="logo" src="../assets/glidecom_logo_text.svg" alt="Glidecom">
+            </a>
+            <p class="language-switch"><a href="/de/datenschutzerklärung/" aria-label="Zu Deutsch wechseln">DE</a></p>
+        </header>
 
         <h1>Privacy Policy</h1>
-        <p class="language-switch">Zu <a href="/de/datenschutzerklärung/">deutsch</a> wechseln.</p>
         <section>
         <p>We are very pleased that you are interested in our organization. The protection of your personal data is particularly important to our management. You can use our websites without disclosing any personal data to us. However, if you would like to use more specific services via our websites, other websites, applications and social media pages, we may have to process your personal data. If we want to process data about you and we cannot rely on any other legal basis, we will always ask you first for your consent (e.g. via a cookie banner).</p>
         <p>We always comply with applicable data protection laws when handling your personal data (such as name, address, email or telephone number). With this privacy policy we inform you about which data we process. In this privacy policy you will also find out what rights you have as a data subject.</p>

@@ -9,7 +9,7 @@
     <style>
         @font-face {
             font-family: "Quicksand";
-            src: url("/assets/Quicksand-VariableFont_wght.ttf") format("truetype");
+            src: url("../assets/Quicksand-VariableFont_wght.ttf") format("truetype");
             font-weight: 300 700;
             font-style: normal;
             font-display: swap;
@@ -45,8 +45,12 @@
             color: var(--fg);
         }
 
-        .language-switch a {
-            text-decoration: underline;
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            margin-bottom: clamp(2rem, 6vw, 3.5rem);
         }
 
         a:focus-visible {
@@ -56,7 +60,6 @@
 
         .logo-link {
             display: inline-block;
-            margin-bottom: clamp(2rem, 6vw, 3.5rem);
             line-height: 0;
         }
 
@@ -64,6 +67,14 @@
             height: 2rem;
             width: auto;
             max-width: 100%;
+        }
+
+        .language-switch {
+            margin: 0;
+        }
+
+        .language-switch a {
+            text-decoration: none;
         }
 
         main {
@@ -104,12 +115,14 @@
 
 <body>
     <main>
-        <a class="logo-link" href="/" aria-label="Home">
-            <img class="logo" src="/assets/glidecom_logo_text.svg" alt="Glidecom">
-        </a>
+        <header class="page-header">
+            <a class="logo-link" href="/" aria-label="Home">
+                <img class="logo" src="../assets/glidecom_logo_text.svg" alt="Glidecom">
+            </a>
+            <p class="language-switch"><a href="/de/impressum/" aria-label="Zu Deutsch wechseln">DE</a></p>
+        </header>
 
         <h1>Imprint</h1>
-        <p class="language-switch">Zu <a href="/de/impressum/">deutsch</a> wechseln.</p>
 
         <section>
             <p>Finn Redmann</p>

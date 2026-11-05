@@ -7,16 +7,18 @@
     <title>Impressum</title>
     <meta name="color-scheme" content="dark">
     <style>
-        @font-face { font-family: "Quicksand"; src: url("/assets/Quicksand-VariableFont_wght.ttf") format("truetype"); font-weight: 300 700; font-style: normal; font-display: swap; }
+        @font-face { font-family: "Quicksand"; src: url("../../assets/Quicksand-VariableFont_wght.ttf") format("truetype"); font-weight: 300 700; font-style: normal; font-display: swap; }
         :root { --bg: #000; --fg: #fff; --pad: clamp(1.25rem, 5vw, 3rem); }
         *, *::before, *::after { box-sizing: border-box; }
         html { -webkit-text-size-adjust: 100%; }
         body { margin: 0; background: var(--bg); color: var(--fg); font-family: "Quicksand", system-ui, -apple-system, "Segoe UI", sans-serif; font-weight: 400; font-size: 1.0625rem; line-height: 1.7; }
         a { color: var(--fg); }
-        .language-switch a { text-decoration: underline; }
+        .page-header { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: clamp(2rem, 6vw, 3.5rem); }
         a:focus-visible { outline: 2px solid var(--fg); outline-offset: 4px; }
-        .logo-link { display: inline-block; margin-bottom: clamp(2rem, 6vw, 3.5rem); line-height: 0; }
+        .logo-link { display: inline-block; line-height: 0; }
         .logo { height: 2rem; width: auto; max-width: 100%; }
+        .language-switch { margin: 0; }
+        .language-switch a { text-decoration: none; }
         main { max-width: 48rem; margin: 0 auto; padding: clamp(2rem, 8vw, 5rem) var(--pad) clamp(3rem, 10vw, 6rem); }
         h1 { margin: 0 0 clamp(2rem, 6vw, 4rem); font-size: clamp(2.5rem, 10vw, 5.5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; overflow-wrap: break-word; }
         section+section { margin-top: 2.5rem; }
@@ -28,12 +30,14 @@
 
 <body>
     <main>
-        <a class="logo-link" href="/" aria-label="Startseite">
-            <img class="logo" src="/assets/glidecom_logo_text.svg" alt="Glidecom">
-        </a>
+        <header class="page-header">
+            <a class="logo-link" href="/" aria-label="Startseite">
+                <img class="logo" src="../../assets/glidecom_logo_text.svg" alt="Glidecom">
+            </a>
+            <p class="language-switch"><a href="/imprint/" aria-label="Switch to English">EN</a></p>
+        </header>
 
         <h1>Impressum</h1>
-        <p class="language-switch">Switch to <a href="/imprint/">english</a>.</p>
 
         <section>
             <p>Finn Redmann</p>
