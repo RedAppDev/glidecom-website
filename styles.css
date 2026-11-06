@@ -70,6 +70,10 @@ body {
     width: 100%;
     max-width: 1100px
   }
+
+  .focus-section__copy {
+    text-align: right
+  }
   
   .center {
   text-align: center;
